@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking the CSS file to the HTML file-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Card Layout</title>
+  
+  </head>
+  <body>
+    <!--Create a music background for the website to add substance-->
+    <audio id="background-music" controls loop autoplay >
+      <source src="backgroundmusic.mp3" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+<!--Create sound effect for hovering on cards-->
+<audio id="hovering">
+ <source src="beam.mp3"></source>
+</audio>
+<!--Create sound effect for clicking buttons-->
+<audio id="click">
+  <source src="click.mp3"></source>
+ </audio>
+
+    <!--Create a div class for card container so we can put the cards inside it-->
+    <div class="card-container">
+      <!--Create multiple div classes for card for each individual card that will be put inside the card container-->
+      <div class="card">
+        <img src="image1.jpg" alt="Card Image 1" />
+        <!--Create multiple class contents inside the div class card to put inside with the learn more button for modal-->
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image2.jpg" alt="Card Image 2" />
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image3.jpg" alt="Card Image 3" />
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image4.jpg" alt="Card Image 4" />
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image5.jpg" alt="Card Image 5" />
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image6.jpg" alt="Card Image 6" />
+        <div class="card-content">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal, opens up when you click learn more -->
+    <div id="myModal" class="modal">
+      <!--Class that contains the content of the modal, like card description and card title-->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!--Text for h2 for title and p for description, gets replaced by the text inside the javascript file-->
+        <h2>Card Title</h2>
+        <p>Additional information about the card.</p>
+      </div>
+    </div>
+    <!--Linking the javascript file into the HTML file-->
+    <script src="script.js"></script>
+  </body>
+</html>
